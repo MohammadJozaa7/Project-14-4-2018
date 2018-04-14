@@ -6,11 +6,11 @@ var app = express();
 var path = require('path');
 //now when req Home page by GET request
 app.get('/', function(req, res) {
-	//response to the request by take the things inside
-	//the file index.html (main page)
-    res.sendFile(path.join(__dirname , '../index.html'));
+  //response to the request by take the things inside
+  //the file index.html (main page)
+  res.sendFile(path.join(__dirname , '../index.html'));
 });
-//make the app listen to the port
+//make the app listen to any port	
 app.listen(8080);
 // and console logthe link for server 
 console.log("SERVER WORK:", 'http://localhost:8080')

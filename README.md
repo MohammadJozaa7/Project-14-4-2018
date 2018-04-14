@@ -29,7 +29,7 @@ step I did it:
   4- go to the index and make the basic thing on our page
     some change in the html to see the thing
 
-  5- now connect the index with the server and open the server
+  5- connect the index with the server and open the server
     by (node +the name of file for server) when you are
     inside the folder contains the server file = [server.js]
 
@@ -42,9 +42,15 @@ step I did it:
 
     and to connect the server.js with our index.html
     we must use the thing in server I ame command for it
-
   
-  6- 
+  6- start make the front end angular to make when press on
+    the buttun make a post request for the info for the user
+    in face book (front end/back end/show data )
+    1.when press the button do something in angular:
+    ng-click="PostData() -- in html
+    (app.controller code) -- in controller
+    and connect this file controller with HTML file
+
   
   7- 
   
