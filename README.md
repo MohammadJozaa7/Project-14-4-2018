@@ -29,14 +29,14 @@ step I did it:
 
   5- connect the index with the server and open the server
     by (node +the name of file for server) when you are
-    inside the folder contains the server file = [server.js]
+    inside the folder contains the server file = [index.js]
 
     and to make the server restart each time when save
     we need to install nodemon
-    and to open server go to directory have the file server.js
+    and to open server go to directory have the file index.js
     and run command (nodemon +the name of file for server) 
     when you are inside the folder contains the server 
-    file = [server.js] 
+    file = [index.js] 
 
     and to connect the server.js with our index.html
     we must use the thing in server I ame command for it

@@ -43,5 +43,5 @@ app.post('/', function(req, res) {
 
 
 app.listen(3000, function() {
-  console.log('SERVER ON TO SEE IT OPEN THIS LINK:\n', 'http://localhost:3000\n');
+  console.log('SERVER WORK, TO OPEN IT GO TO THIS LINK:\n', 'http://localhost:3000\n');
 });
