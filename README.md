@@ -43,14 +43,14 @@ step I did it:
     and to connect the server.js with our index.html
     we must use the thing in server I ame command for it
   
-  6- start make the front end angular to make when press on
+  6- start make the front end (angular) to do somthing when press the button 
     the buttun make a post request for the info for the user
     in face book (front end/back end/show data )
     1.when press the button do something in angular:
     ng-click="PostData() -- in html
     (app.controller code) -- in controller
     and connect this file controller with HTML file
-
+    we can install by (npm install -g @angular/cli)
   
   7- 
   
