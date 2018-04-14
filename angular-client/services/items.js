@@ -1,4 +1,4 @@
-angular.module('app')
+angular.module('myApp')
 .service('itemsService', function($http) {
   this.getAll = function(callback) {
     $http.get('/items')

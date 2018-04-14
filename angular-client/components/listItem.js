@@ -1,4 +1,4 @@
-angular.module('app')
+angular.module('myApp')
 .component('listItem', {
   bindings: {
     item: '<',

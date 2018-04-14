@@ -5,10 +5,13 @@
   <script src="angular/angular.js"></script>
 </head>
 <body>
-  <div ng-app="app">
+    <!-- here -->
+
+  <div ng-app="myApp" ng-controller="myCtrl">
     <app/>
-  </div>
-  <script type="text/javascript" src="index.js"></script>
+  </div >
+  <!-- here -->
+  <script ng-dosomthing="f2()" type="text/javascript" src="index.js"></script>
   <script type="text/javascript" src="services/items.js"></script>
   <script type="text/javascript" src="components/app.js"></script>
   <script type="text/javascript" src="components/list.js"></script>
