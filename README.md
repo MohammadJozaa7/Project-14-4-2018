@@ -1,7 +1,6 @@
 # Project-14-4-2018
   first project I will do
 
-
 the idea:
  get the user info fro face book
 
@@ -12,10 +11,9 @@ main folder:
 
 step I did it:
   1- must make folder / files 
-    server: server.js
+    server: index.js
     client
-    db
-    index.html (main page)
+    database
   
   2- make our npm test file ready (package.json)
     by run command (npm init --yes)

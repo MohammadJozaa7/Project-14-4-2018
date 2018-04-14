@@ -1,17 +1,20 @@
-//make express lib inside var
+//make express lib inside var express
 var express = require('express');
-//make bodyParser lib inside var
+//make bodyParser lib inside var bodyParser
 var bodyParser = require('body-parser');
-//make items lib inside var
+//make database lib inside var items
 var items = require('../database-mongo');
-//make expreess fun  inside var
+// var items = require('../database-mysql');
+//make expreess function inside var app
 var app = express();
-//make path lib inside var
+//make path lib inside var path
 var path = require('path');
-//now when req Home page by GET request
-app.use(express.static(__dirname + '/../client'));
+//make express use the angular-client and node_modules
+app.use(express.static(__dirname + '/../angular-client'));
 app.use(express.static(__dirname + '/../node_modules'));
-//GET request
+// app.use(express.static(__dirname + '/../react-client/dist'));
+
+//must know what is this----------------------------------
 app.get('/items', function (req, res) {
   items.selectAll(function(err, data) {
     if(err) {
@@ -22,15 +25,13 @@ app.get('/items', function (req, res) {
   });
 });
 
-
-
-//some trying
+//some trying/////////////////////////////////////////////////////////
+//when req Home page by GET request
 app.get('/', function(req, res) {
   //console log if get  work
   console.log('GET WORK\n');
-  //response to the request by take the things inside
-  //must change here
-  res.sendFile(path.join(__dirname , '../index.html'));
+  //response to the request by take the html inside main html file
+  res.sendFile(path.join(__dirname , '../angular-client/index.html'));
 });
 
 app.post('/', function(req, res) {
@@ -39,14 +40,6 @@ app.post('/', function(req, res) {
   //the file index.html (main page)
   res.send('done post');
 });
-
-
-
-
-
-
-
-
 
 
 app.listen(3000, function() {
