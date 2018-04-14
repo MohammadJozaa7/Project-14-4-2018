@@ -51,6 +51,8 @@ step I did it:
     (app.controller code) -- in controller
     and connect this file controller with HTML file
     we can install by (npm install -g @angular/cli)
+
+    in file src dont use / first (like inestead of)
   
   7- 
   
