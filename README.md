@@ -52,9 +52,15 @@ step I did it:
 
     in file src dont use / first (like inestead of)
   
-  7- 
-  
-  8- 
+  7- try to make it in react:
+    npm install -g webpack
+    npm install
+
+    now in seperated window:
+    npm run react-dev
+    npm run server-dev
+ 
+  8- now conenct the api for facebook and the token
   
   9- 
   
