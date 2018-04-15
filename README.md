@@ -62,9 +62,17 @@ step I did it:
  
   8- now conenct the api for facebook and the token
   
-  9- 
+  9- i delete my work so i start again but with the 
+   the main full stack becuse i dont understand it untill now
+   and i will try to make some change for what i undestand
   
-  10- 
+  10- what i undestand from react
+  need to make files:
+  1- server: inside it the file to open server
+  2- helper: if i want to use some helper function
+  3- client side:
+  4- data base: the main schema and data base
+
   
   11- 
   

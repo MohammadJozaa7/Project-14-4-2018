@@ -24,7 +24,7 @@ class Search extends React.Component {
   render() {
     return (<div> 
       <h4>Enter a GitHub username tag: </h4>
-      <input value={this.state.term || 'MohammadJoza7'} onChange={this.onChange}/>       
+      <input value={this.state.term || 'MohmmadJozaa7'} onChange={this.onChange}/>       
       <h4><button onClick={this.search}> Get the data now </button></h4>
     </div>) 
   }

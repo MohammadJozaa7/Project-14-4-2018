@@ -17,13 +17,13 @@ class App extends React.Component {
     // TODO
     $.ajax({
       type: "POST",
-      url: 'http://localhost/repos',
+      url: '/repos',
       data: {username : term},
       success: function () { 
-            alert("s")
+            alert(`POST DONE FOR ${term}`)
           },
           error:function(){
-            alert("error")
+            alert("error in post")
           }          
      });
   }

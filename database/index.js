@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/fetcherr');
+
+mongoose.connect('mongodb://localhost/JOZAA');
 
 let repoSchema = mongoose.Schema({
   username : String,
@@ -10,15 +11,16 @@ let repoSchema = mongoose.Schema({
 
 let Repo = mongoose.model('Repo', repoSchema);
 
-let save = (r) => {
+let save = (data) => {
   repo = new Repo({
-	  username : r.owner.login,
-	  url: r.html_url,
-	  repoName : r.name,
-	  private : r.private
+	  username : data.owner.login,
+	  url: data.html_url,
+	  repoName : data.name,
+	  private : data.private
   })
   repo.save()
 }
 
 module.exports.save = save;
+
 module.exports.Repo = Repo;

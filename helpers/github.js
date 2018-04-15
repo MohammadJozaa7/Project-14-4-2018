@@ -3,7 +3,6 @@ const request = require('request');
 const config = require('../config.js');
 
 let getReposByUsername = (username, cb) => {
-  
   let options = {
     url: `https://api.github.com/users/${username}/repos`,
     headers: {
@@ -11,14 +10,9 @@ let getReposByUsername = (username, cb) => {
       'Authorization': `token ${config.TOKEN}`
     }
   };
-
   request(options, function (error, response, body) {
-    let b = JSON.parse(body);
-    cb(null, b)
-});
-
- 
-
+    let data = JSON.parse(body);
+    cb(null, data)
+  }); 
 }
-
 module.exports.getReposByUsername = getReposByUsername;
