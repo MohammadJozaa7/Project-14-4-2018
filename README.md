@@ -68,15 +68,17 @@ step I did it:
   
   10- what i undestand from react
   need to make files:
-  1- server: inside it the file to open server
-  2- helper: if i want to use some helper function
-  3- client side:
-  4- data base: the main schema and data base
+    1- server: inside it the file to open server
+    2- helper: if i want to use some helper function
+    3- client side: have the dist (the mian page) and src have the copmponent like   service
+    4- data base: the main schema and data base
 
   
-  11- 
+  11- after do that i change the data and call save function
   
-  12- 
+  12- to be honest
+  i undestand 70% from this code (i copy and refactory it bacause no time to start again)
+  and really I try to undestand all things to can start from scarcth but i spend yseterday and today for that
   
   13- 
   

@@ -9,31 +9,27 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.post('/repos', function (req, res) {
-  //console.log("HERE REQ NAME: ",req.body.username)
-  var b = github.getReposByUsername(req.body.username, function(err, repos){
-  	//console.log("HERE REPOS: ",repos)       
-  	for(var i = 0; i < repos.length; i++){
-      db.save(repos[i])
-  		//c.push(repos[i])
-  	}  
+  var allData = github.getReposByUsername(req.body.username, function(err, data){
+    //we have all the data for the user
+   //console.log("HERE DATA HERE:",data) 
+
+   db.save(data)
   })
   res.send('') 
 });
 
 app.get('/repos', function (req, res) {
-  db.Repo.find({}, function(err, r){
+  db.Repo.find({}, function(err, data){
   	var arr = []
-  	for (var i = r.length - 1; i >= r.length - 3; i--) {
-  		arr.push(r[i])
+  	for (var i = data.length - 1; i >= data.length - 3; i--) {
+  		arr.push(data[i])
   	}
   	res.send(arr)
   })
   
 });
 
-
-
-//know what this
+//the posr will the srver listen to it
 let port = 3000;
 app.listen(port, function() {
   console.log(`SERVER WORK OPEN => http://localhost:${port}`);
