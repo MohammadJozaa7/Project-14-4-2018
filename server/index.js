@@ -3,14 +3,12 @@ const github = require('../helpers/github.js')
 var bodyParser = require('body-parser')
 //const db = require('../database/index.js')
 let app = express();
-
-
+//to open home page first // then to use parser json
 app.use(express.static(__dirname + '/../client/dist'));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-
-
+//dont know what the post and get yet------------------------------------------
 app.post('/repos', function (req, res) {
   //console.log(req.body.username)
   var b = github.getReposByUsername(req.body.username, function(err, repos){
@@ -18,9 +16,7 @@ app.post('/repos', function (req, res) {
   	for(var i = 0; i < repos.length; i++){
   		db.save(repos[i])
   	}
-
   })
-
   res.send('')
 });
 
@@ -35,8 +31,10 @@ app.get('/repos', function (req, res) {
   
 });
 
-let port = 3000;
 
+
+//know what this
+let port = 3000;
 app.listen(port, function() {
   console.log(`SERVER WORK ${port}`);
 });

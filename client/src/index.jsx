@@ -30,7 +30,7 @@ class App extends React.Component {
 
   render () {
     return (<div>
-      <h1>Information For Facebook User:</h1>
+      <h1>Information For GitHub User:</h1>
       <RepoList repos={this.state.repos}/>
       <Search onSearch={this.search.bind(this)}/>
     </div>)

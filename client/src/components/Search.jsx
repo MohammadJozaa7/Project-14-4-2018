@@ -1,3 +1,4 @@
+//the search button and input for facebook user
 import React from 'react';
 
 class Search extends React.Component {
@@ -22,8 +23,8 @@ class Search extends React.Component {
 //<h4>Add more repos!</h4>
   render() {
     return (<div> 
-      <h4>Enter a facebook username tag: </h4>
-      <input value={this.state.term || 'm.joza'} onChange={this.onChange}/>       
+      <h4>Enter a GitHub username tag: </h4>
+      <input value={this.state.term || 'MohammadJoza7'} onChange={this.onChange}/>       
       <h4><button onClick={this.search}> Get the data now </button></h4>
     </div>) 
   }

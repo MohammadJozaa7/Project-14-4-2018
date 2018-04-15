@@ -1,3 +1,4 @@
+//must change this fucntion to take the info of facebook users
 const request = require('request');
 const config = require('../config.js');
 
